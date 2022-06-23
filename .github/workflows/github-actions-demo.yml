@@ -15,6 +15,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: curl "https://api.github.com/repos/Hemabai/Git-practise/pulls"
+      - run: curl "https://api.github.com/repos/Hemabai/Git-practise/pulls?state=closed"
      
       
