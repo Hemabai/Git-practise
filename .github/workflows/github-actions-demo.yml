@@ -15,6 +15,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: curl "https://api.github.com/repos/Hemabai/Git-practise/pulls?updated_at:<=2022-06-21"           
+      - run: curl \
+                 -H "Accept: application/vnd.github.v3+json" \
+                  https://api.github.com/repos/Hemabai/Git-practise/pulls  
      
       
