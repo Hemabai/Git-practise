@@ -15,7 +15,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: curl "https://api.github.com/repos/Hemabai/Git-practise/pulls?state=open"
+      - run: curl "https://api.github.com/repos/Hemabai/Git-practise/pulls?created:2022-06-06..2022-06-13"
              | grep "html_url" | grep "/pull/" >> output3.txt
       - run: cat output3.txt
       
