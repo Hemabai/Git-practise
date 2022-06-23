@@ -16,9 +16,9 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: curl \ 
-                  -H "Accept:application/vnd.github.v3+json" \ 
-                  -H "Authorization:token <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>" \
-                   https://api.github.com/repos/Hemabai/Git-practise/pulls
+               -H "Accept:application/vnd.github.v3+json" \ 
+               -H "Authorization:token <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>" \
+                https://api.github.com/repos/Hemabai/Git-practise/pulls
       
      
       
